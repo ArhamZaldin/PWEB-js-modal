@@ -8,9 +8,9 @@
 </head>
 <body id="body">
     <div class="container">
-        <div class="login">LOGIN</div>
+        <div class="title">LOGIN</div>
         <div class="form">
-            <form id="myForm" name="login" action="login.html" method="POST"></form>
+            <form name="login" action="index.html" method="POST">
                 <div class="user">
                     <div>Username</div>
                     <div><input type="text" name="username" placeholder="masukkan nama..."></div>
@@ -19,8 +19,11 @@
                     <div>Password</div>
                     <div><input type="password" name="password" placeholder="masukkan password..."></div>
                 </div>
-                <div>
-                    <button data-toggle="login" onclick="login()"> LOGIN </button>
+                <div class="invalid">
+                    <span class="span">*invalid username or password!</span>
+                </div>
+                <div class="button">
+                    <input type="button" onclick="login_act()" value="LOGIN">
                 </div>
             </form>
         </div> 

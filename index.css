@@ -11,7 +11,7 @@ div.container {
     padding: 20px;
 }
 
-div.login {
+div.title {
     width: fit-content;
     font-size: 25px;
     font-weight: bold;
@@ -33,7 +33,6 @@ div.form {
 div.user {
     display: flex;
     justify-content: space-between;
-    /* background-color: cadetblue; */
     width: 300px;
     font-size: 20px;
 }
@@ -47,9 +46,8 @@ div.user input {
 div.pass {
     display: flex;
     justify-content: space-between;
-    /* background-color: cadetblue; */
     width: 300px;
-    margin: 30px 0px 30px 0px;
+    margin: 25px 0px 10px 0px;
     font-size: 20px;
 }
 
@@ -59,7 +57,25 @@ div.pass input {
     outline: none;
 }
 
-button {
+div.invalid {
+    color: red;
+    height: 25px;
+}
+
+.span {
+    display: none;
+}
+
+.span.show   {
+    display: block;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+div.button input {
     border: none;
     outline: none;
     font-size: 18px;
@@ -69,7 +85,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+div.button input:hover {
     box-shadow: 0px 0px 10px lime;
 }
 
